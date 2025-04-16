@@ -107,9 +107,9 @@ function add_course(){
     if(gd==-1){ document.getElementById("alert3").innerHTML="<small class='alert alert-danger'><strong>alert!</strong> Reappear - CGPA cannot be calculated!</small>"; }
     else if(gd==-2){ document.getElementById("alert3").innerHTML="<small class='alert alert-danger'><strong>alert!</strong> Absent - CGPA cannot be calculated!</small>"; }
     else if(c_id.length!=7){ document.getElementById("alert2").innerHTML="<small class='alert alert-danger'><strong>alert!</strong> Course Id should be of length 8</small>"; }
-    else if(isNaN(c_id[0])||isNaN(c_id[1])||isNaN(c_id[5])||isNaN(c_id[6])){ document.getElementById("alert2").innerHTML="<small class='alert alert-danger'><strong>alert!</strong> Course Id - format error</small>"; }
-    else if(!(isNaN(c_id[2])&&isNaN(c_id[3])&&isNaN(c_id[4]))){ document.getElementById("alert2").innerHTML="<small class='alert alert-danger'><strong>alert!</strong> Course Id - format error</small>"; }
-    else if(course_history.includes(c_id)){ document.getElementById("alert2").innerHTML="<small class='alert alert-danger'><strong>alert!</strong> Course Id - Already exist</small>"; }
+   // else if(isNaN(c_id[0])||isNaN(c_id[1])||isNaN(c_id[5])||isNaN(c_id[6])){ document.getElementById("alert2").innerHTML="<small class='alert alert-danger'><strong>alert!</strong> Course Id - format error</small>"; }
+  //  else if(!(isNaN(c_id[2])&&isNaN(c_id[3])&&isNaN(c_id[4]))){ document.getElementById("alert2").innerHTML="<small class='alert alert-danger'><strong>alert!</strong> Course Id - format error</small>"; }
+   // else if(course_history.includes(c_id)){ document.getElementById("alert2").innerHTML="<small class='alert alert-danger'><strong>alert!</strong> Course Id - Already exist</small>"; }
     else{ document.getElementById("alert2").innerHTML="";
     document.getElementById("alert3").innerHTML="";
     all_point.push(gd); curr_point.push(gd); all_credit.push(ct); curr_credit.push(ct);
